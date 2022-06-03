@@ -95,3 +95,18 @@ body {
     font-size: 50px;
     font-weight: 700;
 }
+
+/* main menu bar */
+
+.navbar.navbar-expand-lg {
+    background-color: #1d539f !important;
+    color: white !important;
+}
+
+.navbar-brand{
+    color: white !important;
+}
+
+.nav-link{
+    color: white !important;
+}
