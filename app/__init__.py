@@ -14,7 +14,13 @@ def index():
 def education():
     return render_template('education.html')
 
+@app.route('/hobbies')
+def hobbies():
+    return render_template('hobbies.html')
+
 @app.route('/experiences')
 def experiences():
     return render_template('experiences.html')
+
+
 
