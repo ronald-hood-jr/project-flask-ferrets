@@ -111,24 +111,13 @@ body {
     color: white !important;
 }
 
-/* education page */
+/* hobbies page */
 .container {
     padding-top: 100px;
     padding-bottom: 50px;
 }
 
 .container-img {
-    /* padding-top: 100px;
-    padding-bottom: 50px;
-    padding-left: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center; */
-    /* position: absolute;
-    left: 50%;
-    right: 50%
-    top: 50%;
-    transform: translate(-50%, -50%); */
     display: flex !important;
     justify-content: center;
     width: 50%;
@@ -184,6 +173,10 @@ body {
       flex: 100%;
       max-width: 100%;
     }
+  }
+
+  .hobbies {
+      text-align: center;
   }
 
 /* .grid-container {
