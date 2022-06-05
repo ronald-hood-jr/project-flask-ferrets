@@ -1,0 +1,37 @@
+[
+    {
+      "year": "2019",
+      "events": [
+        {
+          "icon": "work",
+          "title": "XYZ at Company",
+          "content": "job description"
+        }
+      ]
+    },
+    {
+      "year": "2020",
+      "events": [
+        {
+          "icon": "work",
+          "title": "XYZ at Company",
+          "content": "job description"
+        },
+        {
+          "icon": "work",
+          "title": "XYZ at Company",
+          "content": "job description"
+        }
+      ]
+    },
+    {
+      "year": "2022",
+      "events": [
+        {
+          "icon": "movie",
+          "title": "XYZ at Company",
+          "content": "job description"
+        }
+      ]
+    }
+  ]
