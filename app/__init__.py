@@ -1,4 +1,5 @@
 import os
+import json
 from flask import Flask, render_template, request, url_for
 from dotenv import load_dotenv
 
@@ -21,7 +22,14 @@ def hobbies():
 
 @app.route('/experiences')
 def experiences():
-    return render_template('experiences.html')
+    experiences = get_static_json("static/files/experiences.json")
+    return render_template('experiences.html', experiences=experiences)
 
+def get_static_json(path):
+    return json.load(open(get_static_file(path)))
 
+def get_static_file(path):
+    root = os.path.realpath(os.path.dirname(__file__))
+    return os.path.join(root, path)
+    
 
