@@ -16,7 +16,8 @@ def education():
 
 @app.route('/hobbies')
 def hobbies():
-    return render_template('hobbies.html')
+    my_hobbies = ["hiking", "skiing", "kayaking", "skating", "snowboarding", "painting", "watching movies", "reading"]
+    return render_template('hobbies.html', my_hobbies=my_hobbies)
 
 @app.route('/experiences')
 def experiences():
