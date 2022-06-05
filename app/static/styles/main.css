@@ -159,7 +159,7 @@ body {
     vertical-align: middle;
     width: 100%;
   }
-  
+
   /* Responsive layout - makes a two column-layout instead of four columns */
   @media screen and (max-width: 800px) {
     .column {
@@ -178,4 +178,12 @@ body {
 
   .hobbies {
       text-align: center;
+  }
+
+  .about {
+  column-count: 3;
+  column-gap: 30px;
+  column-rule-style: solid;
+  column-rule-width: 1px;
+  margin: 20px;
   }
