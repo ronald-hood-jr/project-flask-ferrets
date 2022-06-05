@@ -13,7 +13,8 @@ def index():
 
 @app.route('/education')
 def education():
-    return render_template('education.html')
+    education = get_static_json("static/files/education.json")
+    return render_template('education.html', education=education)
 
 @app.route('/hobbies')
 def hobbies():
