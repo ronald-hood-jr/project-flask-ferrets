@@ -26,13 +26,14 @@
     <div class="row">
         {% for degree in education %}
         <div class="col s12 m4 l8">
-            <span class="date">{{ degree.year }}</span>
-            <ul class="list">
+            <aboutbody class="date">{{ degree.year }}</aboutbody>
+            <aboutbody>
+                 <ul class="list">
                 {% for event in degree.events %}
                 <li>
                     <div class="icon-title">
                         <i class="tiny material-icons">{{ event.icon }}</i>
-                        <a href="/education" class="title">{{ event.university }}</a>
+                        <a href="https://www.helsinki.fi/en" target="_blank" class="title">{{ event.university }}</a>
                     </div>
                     <span class="content">{{ event.degree_name }}</span>
                     <br>
@@ -40,8 +41,11 @@
                 </li>
                 {% endfor %}
             </ul>
+            </aboutbody>
+           
         </div>
         {% endfor %}
+        <img src="./static/img/uni.png" width="100%" height="auto" alt=''/>
     </div>
     <br>
     <br>
