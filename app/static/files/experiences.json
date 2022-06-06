@@ -1,26 +1,26 @@
 [
     {
-      "year": "2019",
+      "year": "1996",
       "events": [
         {
           "icon": "work",
-          "title": "XYZ at Company",
-          "content": "job description"
+          "title": "Software Engineer at Transmeta",
+          "content": "Transmeta Corporation designs, develops and sells highly efficient x86-compatible software-based microprocessors that deliver a compelling balance of low power consumption, high performance, low cost and small size."
         }
       ]
     },
     {
-      "year": "2020",
+      "year": "2003",
       "events": [
         {
           "icon": "work",
-          "title": "XYZ at Company",
-          "content": "job description"
+          "title": "Software Engineer at Open Source Development Labs",
+          "content": "Founded in 2000, OSDL positioned itself as an independent, non-profit lab for developers who are adding enterprise capabilities to Linux."
         },
         {
           "icon": "work",
-          "title": "XYZ at Company",
-          "content": "job description"
+          "title": "OSDL Fellow at Open Source Development Labs",
+          "content": "OSDL sponsored projects, including industry initiatives to enhance Linux for use in corporate data centres, in telecommunications networks, and on desktop computers."
         }
       ]
     },
@@ -28,9 +28,9 @@
       "year": "2022",
       "events": [
         {
-          "icon": "movie",
-          "title": "XYZ at Company",
-          "content": "job description"
+          "icon": "work",
+          "title": "Maintainer at The Linux Foundation",
+          "content": "This person is responsible for this repository from a technical perspective, ensuring code quality, robustness, and functionality of the repos code."
         }
       ]
     }

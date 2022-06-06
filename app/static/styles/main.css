@@ -181,9 +181,25 @@ body {
   }
 
   .about {
-  column-count: 3;
+  column-count: 2;
   column-gap: 30px;
   column-rule-style: solid;
   column-rule-width: 1px;
   margin: 20px;
   }
+
+  aboutbody {
+  display: grid;
+  padding: 2rem;
+  grid-template-columns: 300px 1fr;
+  gap: 1rem;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  font: 500 100%/1.5 system-ui;
+}
+
+aboutimg {
+  max-width: 100%;
+  height: auto;
+}
