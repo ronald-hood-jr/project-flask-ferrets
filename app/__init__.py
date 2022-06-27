@@ -71,11 +71,7 @@ def timeline():
     }
     return render_template('timeline.html', timeline=timeline)
 
-@app.route('/timeline')
-def timeline_post():
-    name = request.form['name']
-    email = request.form['email']
-    content = request.form['content']
+
     
 
 def createJSON():

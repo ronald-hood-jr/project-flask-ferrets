@@ -22,13 +22,14 @@
 <title>{{ title }}</title>
 {% endblock %} {% block body %}
 <div>
-  <form method="POST">
+  <iframe name="dummyframe" id="dummyframe" style="display: none"></iframe>
+  <form action="/api/timeline_post" method="POST" target="dummyframe">
     <input name="name" />
     <input name="email" />
     <input name="content" />
     <input type="submit" />
   </form>
 </div>
-{% endblock %} {% block body %}
+
 <div class="container">{{timeline}}</div>
 {% endblock %}
