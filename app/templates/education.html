@@ -1,54 +1,22 @@
+<!-- Base Extension -->
 {% extends 'base.html' %}
 
-{% block head %}
-<meta property="og:title" content="Personal Portfolio">
-    <meta property="og:description" content="My Personal Portfolio">
-    <meta property="og:url" content="{{ url }}">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
-
-    <link lang='sass' rel="stylesheet" href="{{ url_for('static', filename='styles/main.css')}}">
-    <link rel='icon' href='./static/img/favicon.ico' type='image/x-icon' />
-    <title>{{ title }}</title>
-{% endblock %}
-
-{% block body %}
-<div class="container">
-    <div class="col-lg-12 text-center">
-        <h2>Education</h2>
-        <hr class="star-light">
-    </div>
-
-    <div class="row">
-        {% for degree in education %}
-        <div class="col s12 m4 l8">
-            <aboutbody class="date">{{ degree.year }}</aboutbody>
-            <aboutbody>
-                 <ul class="list">
-                {% for event in degree.events %}
-                <li>
-                    <div class="icon-title">
-                        <i class="tiny material-icons">{{ event.icon }}</i>
-                        <a href="https://www.helsinki.fi/en" target="_blank" class="title">{{ event.university }}</a>
-                    </div>
-                    <span class="content">{{ event.degree_name }}</span>
-                    <br>
-                    <span class="content">{{ event.thesis}}</span>
-                </li>
-                {% endfor %}
-            </ul>
-            </aboutbody>
-           
-        </div>
+<!-- Content -->
+{% block content %}
+<div class="p-8 my-8">
+  {% for document in education %}
+  <div class="card lg:card-side bg-primary text-primary-content shadow-xl">
+    <figure><img src="../static/img/yale.jpeg" alt="Yale" /></figure>
+    <div class="card-body">
+      <h2 class="card-title">{{document.university}} c/o {{document.year}}</h2>
+      <p>
+        {% for degree in document.degrees %} {{degree}}<br />
         {% endfor %}
-        <img src="./static/img/uni.png" width="100%" height="auto" alt=''/>
+      </p>
+      <img src="../static/img/thinking.svg" />
     </div>
-    <br>
-    <br>
+  </div>
+  {% endfor %}
 </div>
-{% endblock %}
 
+{% endblock content %}

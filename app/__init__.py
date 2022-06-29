@@ -7,6 +7,7 @@ import datetime
 from playhouse.shortcuts import model_to_dict
 import requests
 from requests.structures import CaseInsensitiveDict
+from flask_assets import Bundle, Environment
 url = "http://localhost:5000/api/timeline_post"
 
 headers = CaseInsensitiveDict()
@@ -14,6 +15,12 @@ headers["Accept"] = "application/json"
 
 load_dotenv()
 app = Flask(__name__)
+
+assets = Environment(app)
+css = Bundle("src/main.css", output="dist/main.css")
+
+assets.register("css", css)
+css.build()
 
 mydb = MySQLDatabase(os.getenv("MYSQL_DATABASE"),
     user=os.getenv("MYSQL_USER"),
@@ -27,6 +34,10 @@ print(mydb)
 @app.route('/')
 def index():
     return render_template('index.html', title="Linus Torvalds", url=os.getenv("URL"))
+
+@app.route('/tailwind')
+def tailwind():
+    return render_template('tailwind.html')
 
 @app.route('/education')
 def education():

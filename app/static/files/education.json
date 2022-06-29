@@ -1,13 +1,11 @@
 [
-    {
-      "year": "1988 - 1996",
-      "events": [
-        {
-          "icon": "school",
-          "university": "University of Helsinki",
-          "degree_name": "M.Sc. Computer Science",
-          "thesis":"Linux: A Portable Operating System"
-        }
-      ]
-    }
+  {
+    "year": "2023",
+    "university": "Yale University",
+    "degrees": [
+      "B.S. Molecular Biophysics and Biochemistry",
+      "B.S. Statistics and Data Science"
+    ],
+    "image": "../static/img/yale.jpeg"
+  }
 ]

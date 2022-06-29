@@ -1,0 +1,88 @@
+{% extends 'base.html' %} {% block head %}
+<meta property="og:title" content="Personal Portfolio" />
+<meta property="og:description" content="My Personal Portfolio" />
+<meta property="og:url" content="{{ url }}" />
+
+<link rel="preconnect" href="https://fonts.gstatic.com" />
+<link
+  href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+  rel="stylesheet"
+/>
+
+<link rel="icon" href="./static/img/favicon.ico" type="image/x-icon" />
+<title>{{ title }}</title>
+{% endblock %} {% block body %}
+<header class="nav-bar">
+  <div class="nav-content">
+    <a href="/">
+      <div class="nav-logo">
+        <img src="./static/img/logo.svg" />
+      </div>
+    </a>
+  </div>
+</header>
+
+<div class="profile">
+  <div id="profile-picture" class="profile-picture">
+    <img src="./static/img/linus.png" />
+  </div>
+  <h1>{{ title }}</h1>
+</div>
+
+<aboutbody>
+  <img
+    src="./static/img/linus_on_computer.png"
+    width="90%"
+    height="auto"
+    alt=""
+  />
+  I first encountered the GNU Project in 1991 when another Swedish-speaking
+  computer science student, Lars Wirzenius, took me to the University of
+  Technology to listen to free software guru Richard Stallman's speech. I used
+  Stallman's GNU General Public License version 2 (GPLv2) for my Linux kernel.
+</aboutbody>
+
+<aboutbody>
+  <img src="./static/img/foundation.png" width="90%" height="auto" alt="" />
+  After a visit to Transmeta in late 1996, I accepted a position at the company
+  in California, where I worked from February 1997 to June 2003. I then moved to
+  the Open Source Development Labs, which has since merged with the Free
+  Standards Group to become the Linux Foundation, under whose auspices I
+  continue to work.</aboutbody
+>
+
+<aboutbody>
+  <img src="./static/img/illustration.png" width="90%" height="auto" alt="" />
+  In June 2004, his family and I moved to Dunthorpe, Oregon to be closer to the
+  OSDL's headquarters in Beaverton. From 1997 to 1999, I was involved in 86open,
+  helping select the standard binary format for Linux and Unix. In 1999, I was
+  named by the MIT Technology Review TR100 as one of the world's top 100
+  innovators under age 35.</aboutbody
+>
+
+<aboutbody>
+  <img src="./static/img/bw_linus.png" width="90%" height="auto" alt="" />
+  In 1999, Red Hat and VA Linux, both leading developers of Linux-based
+  software, presented me with stock options in gratitude for my creation. That
+  year both companies went public and my share value briefly shot up to about
+  US$20 million.</aboutbody
+>
+
+<aboutbody>
+  <img src="./static/img/linus_and_tux.png" width="90%" height="auto" alt="" />
+  My personal mascot is a penguin nicknamed Tux, which has been widely adopted
+  by the Linux community as the Linux kernel's mascot.</aboutbody
+>
+
+<aboutbody>
+  <img src="./static/img/git.png" width="90%" height="auto" alt="" />
+  Although I believe "open source is the only right way to do software", I have
+  also said that I use the "best tool for the job", even if that includes
+  proprietary software. I was criticized for my use and alleged advocacy of the
+  proprietary BitKeeper software for version control in the Linux kernel. I
+  subsequently wrote a free-software replacement for it called Git. The Linux
+  Foundation currently sponsors me so I can work full-time on improving
+  Linux.</aboutbody
+>
+
+{% endblock %}
