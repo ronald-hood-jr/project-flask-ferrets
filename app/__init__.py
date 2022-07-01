@@ -82,9 +82,6 @@ def timeline():
     }
     return render_template('timeline.html', timeline=timeline)
 
-
-    
-
 def createJSON():
     resp = "h"
     f = open("static/files/timeline.json", "w")
