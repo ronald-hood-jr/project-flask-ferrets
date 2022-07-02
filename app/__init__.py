@@ -60,11 +60,19 @@ def experiences():
 
 @app.route('/api/timeline_post', methods=['POST'])
 def post_time_line_post():
-    name = request.form['name']
-    email = request.form['email']
-    content = request.form['content']
-    timeline_post = TimelinePost.create(name=name, email=email, content=content)
-    return model_to_dict(timeline_post)
+    name = request.form.get('name')
+    email = request.form.get('email')
+    content = request.form.get('content')
+
+    if name == '' or name is None:
+        return 'Invalid name', 400
+    elif content == '' or content is None:
+        return 'Invalid content', 400
+    elif email == '' or email is None or '@' not in email:
+        return 'Invalid email', 400
+    else:
+        timeline_post = TimelinePost.create(name=name, email=email, content=content)
+        return model_to_dict(timeline_post)
 
 @app.route('/api/timeline_post', methods=['GET'])
 def get_time_line_post():
