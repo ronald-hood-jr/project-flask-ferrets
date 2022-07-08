@@ -17,12 +17,15 @@
 
     <title>Ronald Hood Jr.</title>
   </head>
-  <!-- Navbar -->
-  {% include 'components/navbar.html' %}
+  <div class="flex flex-col h-screen justify-between">
+    <!-- Navbar -->
+    {% include 'components/navbar.html' %}
 
-  <!-- Content Holder -->
-  {% block content %} {% endblock content%}
-
-  <!-- Footer -->
-  {% include 'components/footer.html' %}
+    <div class="mb-auto">
+      <!-- Content Holder -->
+      {% block content %} {% endblock content%}
+    </div>
+    <!-- Footer -->
+    {% include 'components/footer.html' %}
+  </div>
 </html>

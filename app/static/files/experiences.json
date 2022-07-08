@@ -1,37 +1,17 @@
 [
-    {
-      "year": "1996",
-      "events": [
-        {
-          "icon": "work",
-          "title": "Software Engineer at Transmeta",
-          "content": "Transmeta Corporation designs, develops and sells highly efficient x86-compatible software-based microprocessors that deliver a compelling balance of low power consumption, high performance, low cost and small size."
-        }
-      ]
-    },
-    {
-      "year": "2003",
-      "events": [
-        {
-          "icon": "work",
-          "title": "Software Engineer at Open Source Development Labs",
-          "content": "Founded in 2000, OSDL positioned itself as an independent, non-profit lab for developers who are adding enterprise capabilities to Linux."
-        },
-        {
-          "icon": "work",
-          "title": "OSDL Fellow at Open Source Development Labs",
-          "content": "OSDL sponsored projects, including industry initiatives to enhance Linux for use in corporate data centres, in telecommunications networks, and on desktop computers."
-        }
-      ]
-    },
-    {
-      "year": "2022",
-      "events": [
-        {
-          "icon": "work",
-          "title": "Maintainer at The Linux Foundation",
-          "content": "This person is responsible for this repository from a technical perspective, ensuring code quality, robustness, and functionality of the repos code."
-        }
-      ]
-    }
-  ]
+  {
+    "year": "2019 - 2021",
+    "title": "Hardware Specialist at Student Technology Collaborative",
+    "content": "As a hardware specialist of Yale STC, a branch of Yale's IT department, I regularly repair the personal computers of students. Additionally, as a queue coordinator, I managed all of the tickets for students enrolled in either the Yale School of Management or the Yale Forestry School."
+  },
+  {
+    "year": "2021 - 2022",
+    "title": "Co-President of Ivy Space Coalition",
+    "content": "The Ivy Space Coalition (ISC) is an undergraduate group with representatives across the 8 Ivy League institutions that focuses on building a community of aspiring entrepreneurs and aerospace engineers. Every year the ISC hosts the ISC Conference that invites industry leaders from across the world to give presentation and interact directly with students."
+  },
+  {
+    "year": "2021 - 2022",
+    "title": "Associate Software Engineer at DMA Labs",
+    "content": "This person is responsible for this repository from a technical perspective, ensuring code quality, robustness, and functionality of the repos code."
+  }
+]

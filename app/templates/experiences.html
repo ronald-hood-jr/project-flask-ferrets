@@ -1,47 +1,27 @@
-{% block head %}
-<meta property="og:title" content="Personal Portfolio" />
-<meta property="og:description" content="My Personal Portfolio" />
-<meta property="og:url" content="{{ url }}" />
+<!-- Base Extension -->
+{% extends 'base.html' %}
 
-<link rel="preconnect" href="https://fonts.gstatic.com" />
-<link
-  href="https://fonts.googleapis.com/icon?family=Material+Icons"
-  rel="stylesheet"
-/>
-<link
-  href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-  rel="stylesheet"
-/>
+<!-- Content -->
+{% block content %}
+<!-- <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fpytorch%2Fpytorch%2Fblob%2Fmaster%2Ftorch%2Fnn%2Fcpp.py&style=github&showBorder=on&showLineNumbers=on&showFileMeta=on&showCopy=on"></script> -->
 
-<link rel="icon" href="./static/img/favicon.ico" type="image/x-icon" />
-<title>{{ title }}</title>
-{% endblock %} {% block body %}
-<div class="container">
-  <div class="col-lg-12 text-center">
-    <h2>WORK EXPERIENCES</h2>
-    <hr class="star-light" />
-  </div>
-
-  <div class="row">
-    {% for job in experiences %}
-    <div class="col s12 m4 l8">
-      <span class="date">{{ job.year }}</span>
-      <ul class="list">
-        {% for event in job.events %}
-        <li>
-          <div class="icon-title">
-            <i class="tiny material-icons">{{ event.icon }}</i>
-            <a href="/education" class="title">{{ event.title }}</a>
-          </div>
-          <span class="content">{{ event.content }}</span>
-        </li>
-        {% endfor %}
-      </ul>
+<div
+  class="flex flex-col-reverse w-full justify-center justify-items-center items-center bg-base-100"
+>
+  {% for job in experiences %}
+  <div
+    class="card w-1/2 bg-base-300 text-base-content m-4 hover:bg-primary hover:text-primary-content"
+  >
+    <div class="card-body">
+      <h2 class="card-title">
+        {{ job.title }}
+        <br />
+        {{ job.year }}
+      </h2>
+      <span class="content">{{ job.content }}</span>
     </div>
-    {% endfor %}
   </div>
-  <br />
-  <br />
+  {% endfor %}
 </div>
 
-{% endblock %}
+{% endblock content %}

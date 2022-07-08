@@ -1,13 +1,13 @@
 {% extends 'base.html' %} {% block content %}
 
-<div class="flex flex-col w-full lg:flex-row">
+<div class="flex flex-col w-full lg:flex-row bg-primary">
   <div
     class="grid flex-grow card h-max bg-primary rounded-box place-items-start m-4"
   >
     {% include 'components/postform.html' %}
+    <img class="m-4 px-6" src="../static/img/blog.svg" />
   </div>
 
-  <div class="divider lg:divider-horizontal"></div>
   <div
     class="grid flex-grow card bg-primary rounded-box place-items-center m-4"
   >

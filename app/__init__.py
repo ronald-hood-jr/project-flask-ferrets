@@ -71,6 +71,10 @@ def get_time_line_post():
         ]
     }
 
+@app.route('/locations')
+def locations():
+    return render_template('location.html')
+
 @app.route('/timeline')
 def timeline():
     

@@ -1,59 +1,40 @@
-{% extends 'base.html' %} {% block head %}
-<meta property="og:title" content="Personal Portfolio" />
-<meta property="og:description" content="My Personal Portfolio" />
-<meta property="og:url" content="{{ url }}" />
+{% extends 'base.html' %} {% block content %}
 
-<link rel="preconnect" href="https://fonts.gstatic.com" />
-<link
-  href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-  rel="stylesheet"
-/>
-
-<link rel="icon" href="./static/img/favicon.ico" type="image/x-icon" />
-<title>{{ title }}</title>
-{% endblock %} {% block body %}
-
-<section id="hobbies">
-  <div class="container">
-    <div class="col-lg-12 text-center">
-      <h2>WHAT I LOVE TO DO</h2>
-      <hr class="star-light" />
-    </div>
+<div class="carousel">
+  <div id="item1" class="carousel-item">
+    <img src="./static/img/snowboarding.jpeg" class="" />
   </div>
-  <div class="container-img">
-    <div class="row">
-      <div class="column">
-        <img src="./static/img/snowboarding.jpeg" />
-        <img src="./static/img/kayaking.jpeg" />
-        <img src="./static/img/art.jpeg" />
-      </div>
-      <div class="column">
-        <img src="./static/img/hiking.jpeg" />
-        <img src="./static/img/skating.jpeg" />
-        <img src="./static/img/skiing.jpeg" />
-        <img src="./static/img/movies.jpeg" />
-      </div>
-      <div class="column">
-        <img src="./static/img/hiking2.jpeg" />
-        <img src="./static/img/kayaking2.jpeg" />
-        <img src="./static/img/painting.jpeg" />
-      </div>
-    </div>
+  <div id="item2" class="carousel-item">
+    <img src="./static/img/kayaking.jpeg" class="" />
   </div>
+  <div id="item3" class="carousel-item">
+    <img src="./static/img/art.jpeg" class="" />
+  </div>
+  <div id="item4" class="carousel-item">
+    <img src="./static/img/hiking.jpeg" class="" />
+  </div>
+  <div id="item5" class="carousel-item">
+    <img src="./static/img/illustration.jpeg" class="" />
+  </div>
+  <div id="item6" class="carousel-item">
+    <img src="./static/img/skiing.jpeg" class="" />
+  </div>
+  <div id="item7" class="carousel-item">
+    <img src="./static/img/painting.jpeg" class="" />
+  </div>
+  <div id="item8" class="carousel-item">
+    <img src="./static/img/movies.jpeg" class="" />
+  </div>
+</div>
+<div class="flex justify-center w-full py-2 gap-2">
+  <a href="#item1" class="btn btn-xs">1</a>
+  <a href="#item2" class="btn btn-xs">2</a>
+  <a href="#item3" class="btn btn-xs">3</a>
+  <a href="#item4" class="btn btn-xs">4</a>
+  <a href="#item5" class="btn btn-xs">5</a>
+  <a href="#item6" class="btn btn-xs">6</a>
+  <a href="#item7" class="btn btn-xs">7</a>
+  <a href="#item8" class="btn btn-xs">8</a>
+</div>
 
-  <div class="container">
-    <h6 class="hobbies">
-      {% for hobby in my_hobbies %} • {{ hobby }} • {% endfor %}
-    </h6>
-  </div>
-
-  <div class="container-dark">
-    <div class="col-lg-12 text-center">
-      <h2>PLACES I'VE TRAVELLED TO</h2>
-      <hr class="star-light" />
-      <img src="./static/img/map.png" />
-    </div>
-    >
-  </div>
-</section>
-{% endblock %}
+{% endblock content %}

@@ -1,8 +1,10 @@
 {% for post in timeline.timeline_posts %}
-<div class="max-w-2xl px-8 py-4 mx-auto my-4 bg-base-100 rounded-lg shadow-md">
+<div
+  class="max-w-2xl w-10/12 px-8 py-4 mx-auto my-4 mx-4 bg-base-100 rounded-lg shadow-md"
+>
   <div class="flex items-center justify-between">
     <span class="text-sm font-light text-base-content"
-      >{{post.created_at.strftime("%d %B, %Y")}}</span
+      >{{post.created_at.strftime("%d %B, %Y %H %M %S")}}</span
     >
     <div class="flex items-center">
       <img
@@ -10,9 +12,7 @@
         src="https://images.unsplash.com/photo-1502980426475-b83966705988?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=40&q=80"
         alt="avatar"
       />
-      <a class="font-bold text-gray-700 cursor-pointer dark:text-gray-200"
-        >{{post.name}}</a
-      >
+      <a class="font-bold text-base-content cursor-pointer">{{post.name}}</a>
     </div>
   </div>
   <div class="mt-2">
