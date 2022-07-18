@@ -14,7 +14,7 @@ class AppTestCase(unittest.TestCase):
         assert response.status_code == 200
         response_text = response.get_data(as_text = True)
         assert '<title>Ronald Hood Jr.</title>' in response_text
-        assert '<a class="btn" href="/#">Contact Me</a>' in response_text
+        assert '<a class="btn" href="mailto: ronaldhoodjr@gmail.com">Contact Me</a>' in response_text
 
     def test_timeline(self):
         response = self.client.get('/api/timeline_post')
