@@ -32,4 +32,6 @@ jobs:
         run: python3-virtualenv/bin/pip install -r requirements.txt
 
       - name: Run Tests
-        run: ./run_test.sh
+        run: |
+          source python3-virtualenv/bin/activate
+          ./run_test.sh
