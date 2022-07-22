@@ -12,6 +12,6 @@
   {
     "year": "2021 - 2022",
     "title": "Associate Software Engineer at DMA Labs",
-    "content": "Under the direct guidance of the CTO and CSO, Chief Scientific Office, I created graphql apis for the purpose of tracking historical financial data. These improvements decreased reliance on costly external api calls by approximately 10%."
+    "content": "Under the direct guidance of the CTO and CSO, I created graphql APIs for tracking historical financial data. These improvements decreased reliance on costly external API calls by ~30%. Furthermore, created a full-text search database and its corresponding ETL pipeline to summarize transactions both quantitatively and qualitatively."
   }
 ]
